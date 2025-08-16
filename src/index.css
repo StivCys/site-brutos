@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neon Fire Band Design System - Dark theme with orange fire aesthetics */
+
+@layer base {
+  :root {
+    /* Dark background system */
+    --background: 0 0% 8%;
+    --foreground: 30 100% 95%;
+
+    /* Card system */
+    --card: 0 0% 12%;
+    --card-foreground: 30 100% 95%;
+
+    /* Popover system */
+    --popover: 0 0% 10%;
+    --popover-foreground: 30 100% 95%;
+
+    /* Neon Fire Primary - Orange/Red spectrum */
+    --primary: 16 100% 60%;
+    --primary-foreground: 0 0% 8%;
+    --primary-glow: 25 100% 50%;
+    --primary-bright: 16 100% 70%;
+
+    /* Secondary - Deeper fire tones */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 30 100% 95%;
+
+    /* Muted - Dark grays */
+    --muted: 0 0% 20%;
+    --muted-foreground: 30 20% 70%;
+
+    /* Accent - Bright fire accent */
+    --accent: 25 100% 50%;
+    --accent-foreground: 0 0% 8%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 30 100% 95%;
+
+    /* Borders and inputs - Dark with subtle glow */
+    --border: 0 0% 25%;
+    --input: 0 0% 18%;
+    --ring: 16 100% 60%;
+
+    /* Gradients */
+    --gradient-fire: linear-gradient(135deg, hsl(16 100% 60%), hsl(25 100% 50%), hsl(0 100% 50%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 4%));
+    --gradient-glow: radial-gradient(circle, hsl(16 100% 60% / 0.3), transparent 70%);
+
+    /* Shadows and glows */
+    --shadow-neon: 0 0 20px hsl(16 100% 60% / 0.5), 0 0 40px hsl(16 100% 60% / 0.3);
+    --shadow-fire: 0 0 30px hsl(25 100% 50% / 0.4);
+    --shadow-subtle: 0 4px 20px hsl(0 0% 0% / 0.5);
+
+    /* Animation durations */
+    --duration-fast: 0.2s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.5s;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode (default for this theme) */
+  .dark {
+    /* Keep same values as root since we're dark by default */
+    --background: 0 0% 8%;
+    --foreground: 30 100% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-dark);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  /* Neon button effects */
+  .btn-neon {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: var(--gradient-fire);
+    box-shadow: var(--shadow-neon);
+    border: 1px solid hsl(var(--primary));
+  }
+
+  .btn-neon:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-fire), 0 8px 25px hsl(0 0% 0% / 0.3);
+  }
+
+  .btn-neon:active {
+    transform: translateY(0);
+  }
+
+  /* Glow text effect */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.6);
+  }
+
+  /* Link hover effects */
+  .link-fire {
+    @apply relative transition-all duration-300;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+    background-size: 0% 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  .link-fire:hover {
+    background-size: 100% 2px;
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.6);
+  }
+
+  /* Grid responsive layouts */
+  .grid-responsive {
+    @apply grid gap-4;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* Card with neon borders */
+  .card-neon {
+    @apply relative bg-card/90 backdrop-blur-sm border border-primary/20 rounded-lg;
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.1), var(--shadow-subtle);
+  }
+
+  .card-neon:hover {
+    border-color: hsl(var(--primary) / 0.4);
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.2), var(--shadow-neon);
+  }
+
+  /* Navigation styles */
+  .nav-item {
+    @apply relative px-4 py-2 transition-all duration-300 rounded-md;
+  }
+
+  .nav-item:hover {
+    background: hsl(var(--primary) / 0.1);
+    box-shadow: inset 0 0 10px hsl(var(--primary) / 0.2);
+  }
+
+  /* Animation classes */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+/* Keyframe animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px hsl(var(--primary) / 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.8), 0 0 30px hsl(var(--accent) / 0.6);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
