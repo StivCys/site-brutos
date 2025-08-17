@@ -32,8 +32,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <span className="text-glow">FIRE</span>
-            <span className="text-primary">BAND</span>
+            <span className="text-glow">BRUTUS</span>
+            <span className="text-primary">ROCK</span>
           </div>
 
           {/* Navigation Links */}
