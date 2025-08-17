@@ -17,14 +17,18 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         {/* Animated Logo */}
         <div className="mb-8 animate-float">
-          <div className="inline-block p-8 rounded-full bg-gradient-fire animate-pulse-glow">
-            <svg 
-              className="w-24 h-24 text-background" 
-              fill="currentColor" 
-              viewBox="0 0 24 24"
+          <div className="inline-block rounded-full bg-gradient-fire animate-pulse-glow overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-40 h-40 object-cover"
             >
-              <path d="M12 2L3.09 8.26L4 21L12 17L20 21L20.91 8.26L12 2ZM12 15.5L7 18L7.5 11L12 7.5L16.5 11L17 18L12 15.5Z"/>
-            </svg>
+              {/* Use um vídeo com proporção quadrada para melhores resultados */}
+              <source src="/logo.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
           </div>
         </div>
 
