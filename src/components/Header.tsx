@@ -13,6 +13,16 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Efeito para aplicar o zoom de 50% na página
+  useEffect(() => {
+    document.documentElement.style.zoom = '0.7';
+
+    // Função de limpeza para reverter o zoom quando o componente for desmontado
+    return () => {
+      document.documentElement.style.zoom = '1';
+    };
+  }, []); // O array de dependências vazio garante que isso rode apenas uma vez
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

@@ -16,14 +16,14 @@ const HeroSection = () => {
       {/* Main content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         {/* Animated Logo */}
-        <div className="mb-8 animate-float">
+        <div className="mb-16 animate-float pt-10">
           <div className="inline-block rounded-full bg-gradient-fire animate-pulse-glow overflow-hidden">
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="w-82 h-92 object-cover"
+              className="w-90 h-90 object-cover"
             >
               {/* Use um vídeo com proporção quadrada para melhores resultados */}
               <source src="/logo.mp4" type="video/mp4" />
