@@ -5,7 +5,7 @@ const ContactSection = () => {
     {
       title: "E-mail Profissional",
       description: "Para contratações e parcerias comerciais",
-      url: "mailto:contato@fireband.com",
+      url: "mailto:contato@BRUTUSROCK.com",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -25,7 +25,7 @@ const ContactSection = () => {
     {
       title: "Instagram",
       description: "Acompanhe nosso dia a dia e bastidores",
-      url: "https://instagram.com/fireband",
+      url: "https://instagram.com/BRUTUSROCK",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12.017 0C8.396 0 7.989.013 7.041.048 6.094.083 5.49.18 4.955.306c-.54.124-1.005.29-1.465.75-.46.46-.626.925-.75 1.465-.126.535-.223 1.139-.258 2.086C2.447 6.558 2.434 6.965 2.434 10.586c0 3.621.013 4.028.048 4.976.035.947.132 1.551.258 2.086.124.54.29 1.005.75 1.465.46.46.925.626 1.465.75.535.126 1.139.223 2.086.258.948.035 1.355.048 4.976.048 3.621 0 4.028-.013 4.976-.048.947-.035 1.551-.132 2.086-.258.54-.124 1.005-.29 1.465-.75.46-.46.626-.925.75-1.465.126-.535.223-1.139.258-2.086.035-.948.048-1.355.048-4.976 0-3.621-.013-4.028-.048-4.976-.035-.947-.132-1.551-.258-2.086-.124-.54-.29-1.005-.75-1.465-.46-.46-.925-.626-1.465-.75-.535-.126-1.139-.223-2.086-.258C16.045.013 15.638 0 12.017 0zM12.017 2.153c3.555 0 3.97.013 4.897.048.884.04 1.364.188 1.684.312.423.165.724.361 1.042.679.318.318.514.619.679 1.042.124.32.272.8.312 1.684.035.927.048 1.342.048 4.897 0 3.555-.013 3.97-.048 4.897-.04.884-.188 1.364-.312 1.684-.165.423-.361.724-.679 1.042-.318.318-.619.514-1.042.679-.32.124-.8.272-1.684.312-.927.035-1.342.048-4.897.048-3.555 0-3.97-.013-4.897-.048-.884-.04-1.364-.188-1.684-.312-.423-.165-.724-.361-1.042-.679-.318-.318-.514-.619-.679-1.042-.124-.32-.272-.8-.312-1.684-.035-.927-.048-1.342-.048-4.897 0-3.555.013-3.97.048-4.897.04-.884.188-1.364.312-1.684.165-.423.361-.724.679-1.042.318-.318.619-.514 1.042-.679.32-.124.8-.272 1.684-.312.927-.035 1.342-.048 4.897-.048zm0 3.647c-3.73 0-6.756 3.026-6.756 6.756 0 3.73 3.026 6.756 6.756 6.756 3.73 0 6.756-3.026 6.756-6.756 0-3.73-3.026-6.756-6.756-6.756zm0 11.138c-2.42 0-4.382-1.962-4.382-4.382 0-2.42 1.962-4.382 4.382-4.382 2.42 0 4.382 1.962 4.382 4.382 0 2.42-1.962 4.382-4.382 4.382zm8.582-11.386c0-.87-.706-1.576-1.576-1.576-.87 0-1.576.706-1.576 1.576 0 .87.706 1.576 1.576 1.576.87 0 1.576-.706 1.576-1.576z"/>
@@ -35,7 +35,7 @@ const ContactSection = () => {
     {
       title: "Facebook",
       description: "Curta nossa página e fique por dentro de tudo",
-      url: "https://facebook.com/fireband",
+      url: "https://facebook.com/BRUTUSROCK",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -45,7 +45,7 @@ const ContactSection = () => {
     {
       title: "TikTok",
       description: "Vídeos virais e conteúdo exclusivo",
-      url: "https://tiktok.com/@fireband",
+      url: "https://tiktok.com/@BRUTUSROCK",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
@@ -55,7 +55,7 @@ const ContactSection = () => {
     {
       title: "Twitter/X",
       description: "Últimas notícias e atualizações da banda",
-      url: "https://twitter.com/fireband",
+      url: "https://twitter.com/BRUTUSROCK",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -78,10 +78,10 @@ const ContactSection = () => {
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                <strong className="text-foreground">Agenciamento:</strong> management@fireband.com
+                <strong className="text-foreground">Agenciamento:</strong> management@BRUTUSROCK.com
               </p>
               <p>
-                <strong className="text-foreground">Imprensa:</strong> imprensa@fireband.com
+                <strong className="text-foreground">Imprensa:</strong> imprensa@BRUTUSROCK.com
               </p>
               <p>
                 <strong className="text-foreground">Telefone:</strong> +55 (11) 99999-9999

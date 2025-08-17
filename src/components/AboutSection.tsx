@@ -9,7 +9,7 @@ const AboutSection = () => {
           
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              <span className="text-primary font-semibold">Brutos Rock</span> nasceu das chamas 
+              <span className="text-primary font-semibold">BRUTUS ROCK</span> nasceu das chamas 
               da paixão pela música e da vontade de criar algo único e inesquecível. 
               Formada por músicos experientes e talentosos, a banda traz uma energia 
               incendiária que contagia todo tipo de público.
