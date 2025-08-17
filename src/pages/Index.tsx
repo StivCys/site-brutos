@@ -13,7 +13,7 @@ const Index = () => {
         loop
         muted
         playsInline
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        className="fixed top-0 left-0 w-full h-full object-contain md:object-cover -z-10"
       >
         <source src="/video-espaco.mp4" type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.
