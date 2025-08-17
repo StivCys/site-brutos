@@ -30,7 +30,7 @@ const HeroSection = () => {
 
         {/* Main Title */}
         <h1 className="text-6xl md:text-8xl font-bold mb-6 text-glow animate-glow">
-          FIRE BAND
+          Brutos Rock
         </h1>
 
         {/* Subtitle */}
