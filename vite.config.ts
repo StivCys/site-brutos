@@ -4,17 +4,16 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
-  base: '/site-brutos/',
+    ...(process.env.NODE_ENV === 'development' ? [componentTagger()] : []),
+  ],
+  //base: '/site-brutos/', // garante que o GitHub Pages encontre os assets
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
