@@ -23,7 +23,7 @@ const HeroSection = () => {
               loop
               muted
               playsInline
-              className="w-40 h-40 object-cover"
+              className="w-82 h-92 object-cover"
             >
               {/* Use um vídeo com proporção quadrada para melhores resultados */}
               <source src="/logo.mp4" type="video/mp4" />
